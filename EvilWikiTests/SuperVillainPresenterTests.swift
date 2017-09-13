@@ -36,6 +36,7 @@ class SuperVillainPresenterTests: XCTestCase {
         XCTAssertFalse(view.saveEnabled)
     }
     
+    // TEST DOUBLE: SPY
     class TestableSuperVillainEditView: SuperVillainView {
         
         var saveEnabled = true

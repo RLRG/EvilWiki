@@ -50,14 +50,21 @@ class SuperVillainTests: XCTestCase {
         sut.attack()
         
         // 3. ASSERT
-        XCTAssertTrue(weapon.fireWasInvoked)
+        weapon.verify()
     }
     
     // INNER CLASS
+    
+    // TEST DOUBLE: MOCK ----> VERIFY METHOD !! Without the method it would be an SPY.
     class TestableWeapon: MegaWeapon {
         var fireWasInvoked = false
+        
         func fire() {
             fireWasInvoked = true
+        }
+        
+        func verify() {
+            XCTAssertTrue(fireWasInvoked)
         }
     }
     

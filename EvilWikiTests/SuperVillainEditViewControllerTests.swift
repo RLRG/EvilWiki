@@ -42,6 +42,7 @@ class SuperVillainEditViewControllerTests: XCTestCase {
     
     // INNER CLASS !! BE CAREFUL, IT IS NOT A PROTOCOL, WE CAN CREATE A SUBCLASS
     
+    // TEST DOUBLE: SPY TYPE !! If we implement the verify method, it would be a MOCK.
     class TestablePresenter: SuperVillainPresenter {
         var viewReadyInvoked = false
         
