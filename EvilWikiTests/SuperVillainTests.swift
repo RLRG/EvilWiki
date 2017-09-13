@@ -18,10 +18,12 @@ class SuperVillainTests: XCTestCase {
         super.setUp()
         
         weapon = TestableWeapon()
-        sut = SuperVillain.main(weapon: nil)
+        sut = SuperVillain.main(weapon: weapon)
     }
     
     override func tearDown() {
+        sut = nil
+        weapon = nil
         super.tearDown()
     }
 
@@ -44,10 +46,6 @@ class SuperVillainTests: XCTestCase {
     }
     
     func testAttackFiresWeapon() {
-        
-        // 1. ARRANGE
-        let sut = SuperVillain.main(weapon: weapon) // SUT = System Under Test
-        
         // 2. ACT
         sut.attack()
         
