@@ -12,8 +12,10 @@
 		376AB6AD1F696931006CFF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376AB6AB1F696931006CFF6C /* Main.storyboard */; };
 		376AB6AF1F696931006CFF6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376AB6AE1F696931006CFF6C /* Assets.xcassets */; };
 		376AB6B21F696931006CFF6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376AB6B01F696931006CFF6C /* LaunchScreen.storyboard */; };
-		376AB6BD1F696931006CFF6C /* EvilWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6BC1F696931006CFF6C /* EvilWikiTests.swift */; };
 		376AB6C81F696931006CFF6C /* EvilWikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6C71F696931006CFF6C /* EvilWikiUITests.swift */; };
+		376AB6D61F696943006CFF6C /* SuperVillain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6D51F696943006CFF6C /* SuperVillain.swift */; };
+		376AB6D81F696A97006CFF6C /* SuperVillainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6D71F696A97006CFF6C /* SuperVillainTests.swift */; };
+		376AB6DA1F696E35006CFF6C /* MegaWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6D91F696E35006CFF6C /* MegaWeapon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +44,13 @@
 		376AB6B11F696931006CFF6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		376AB6B31F696931006CFF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		376AB6B81F696931006CFF6C /* EvilWikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvilWikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		376AB6BC1F696931006CFF6C /* EvilWikiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilWikiTests.swift; sourceTree = "<group>"; };
 		376AB6BE1F696931006CFF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		376AB6C31F696931006CFF6C /* EvilWikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvilWikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		376AB6C71F696931006CFF6C /* EvilWikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilWikiUITests.swift; sourceTree = "<group>"; };
 		376AB6C91F696931006CFF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		376AB6D51F696943006CFF6C /* SuperVillain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillain.swift; sourceTree = "<group>"; };
+		376AB6D71F696A97006CFF6C /* SuperVillainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainTests.swift; sourceTree = "<group>"; };
+		376AB6D91F696E35006CFF6C /* MegaWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaWeapon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				376AB6AE1F696931006CFF6C /* Assets.xcassets */,
 				376AB6B01F696931006CFF6C /* LaunchScreen.storyboard */,
 				376AB6B31F696931006CFF6C /* Info.plist */,
+				376AB6D51F696943006CFF6C /* SuperVillain.swift */,
+				376AB6D91F696E35006CFF6C /* MegaWeapon.swift */,
 			);
 			path = EvilWiki;
 			sourceTree = "<group>";
@@ -110,8 +116,8 @@
 		376AB6BB1F696931006CFF6C /* EvilWikiTests */ = {
 			isa = PBXGroup;
 			children = (
-				376AB6BC1F696931006CFF6C /* EvilWikiTests.swift */,
 				376AB6BE1F696931006CFF6C /* Info.plist */,
+				376AB6D71F696A97006CFF6C /* SuperVillainTests.swift */,
 			);
 			path = EvilWikiTests;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 					376AB6B71F696931006CFF6C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8WFER5UG23;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 376AB6A31F696931006CFF6C;
 					};
@@ -262,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376AB6D61F696943006CFF6C /* SuperVillain.swift in Sources */,
 				376AB6AA1F696931006CFF6C /* ViewController.swift in Sources */,
 				376AB6A81F696931006CFF6C /* AppDelegate.swift in Sources */,
+				376AB6DA1F696E35006CFF6C /* MegaWeapon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376AB6BD1F696931006CFF6C /* EvilWikiTests.swift in Sources */,
+				376AB6D81F696A97006CFF6C /* SuperVillainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +453,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8WFER5UG23;
 				INFOPLIST_FILE = EvilWikiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlrg.EvilWikiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvilWiki.app/EvilWiki";
 			};
@@ -459,6 +470,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8WFER5UG23;
 				INFOPLIST_FILE = EvilWikiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
