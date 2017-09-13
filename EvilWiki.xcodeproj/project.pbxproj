@@ -19,6 +19,7 @@
 		376AB6DE1F6971FA006CFF6C /* SuperVillain+convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */; };
 		376AB6E01F697BCC006CFF6C /* SuperVillainEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6DF1F697BCC006CFF6C /* SuperVillainEditViewController.swift */; };
 		376AB6E61F697E26006CFF6C /* SuperVillainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6E51F697E26006CFF6C /* SuperVillainPresenter.swift */; };
+		376AB6E81F698035006CFF6C /* SuperVillainEditViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6E71F698035006CFF6C /* SuperVillainEditViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SuperVillain+convenience.swift"; sourceTree = "<group>"; };
 		376AB6DF1F697BCC006CFF6C /* SuperVillainEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainEditViewController.swift; sourceTree = "<group>"; };
 		376AB6E51F697E26006CFF6C /* SuperVillainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainPresenter.swift; sourceTree = "<group>"; };
+		376AB6E71F698035006CFF6C /* SuperVillainEditViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainEditViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				376AB6D71F696A97006CFF6C /* SuperVillainTests.swift */,
 				376AB6DB1F6970E4006CFF6C /* TestData.swift */,
 				376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */,
+				376AB6E71F698035006CFF6C /* SuperVillainEditViewControllerTests.swift */,
 			);
 			path = EvilWikiTests;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			files = (
 				376AB6D81F696A97006CFF6C /* SuperVillainTests.swift in Sources */,
 				376AB6DE1F6971FA006CFF6C /* SuperVillain+convenience.swift in Sources */,
+				376AB6E81F698035006CFF6C /* SuperVillainEditViewControllerTests.swift in Sources */,
 				376AB6DC1F6970E4006CFF6C /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

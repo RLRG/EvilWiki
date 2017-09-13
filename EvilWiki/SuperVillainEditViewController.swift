@@ -14,6 +14,8 @@ class SuperVillainEditViewController: UIViewController {
     @IBOutlet weak var saveButton: UIBarButtonItem!
     var presenter: SuperVillainPresenter?
     
+    static let ID = "SuperVillainEditViewController"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewReady()
