@@ -11,6 +11,10 @@ import XCTest
 
 class SuperVillainTests: XCTestCase {
     
+    let mainTitle = "Dr."
+    let mainName = "Octopus"
+    let mainFullName = "Dr. Octopus"
+        
     override func setUp() {
         super.setUp()
     }
@@ -23,33 +27,33 @@ class SuperVillainTests: XCTestCase {
     func testDescriptionIsTitleSpaceName() {
         
         // 1. ARRANGE
-        let sut = SuperVillain(title: "Dr.", name: "Octopus") // SUT = System Under Test
+        let sut = SuperVillain(title: mainTitle, name: mainName, weapon: nil) // SUT = System Under Test
         
         // 2. ACT
         let description = sut.description
         
         // 3. ASSERT
-        XCTAssertEqual("Dr. Octopus", description)
+        XCTAssertEqual(mainFullName, description)
     }
     
     
     func testNameAndTitleAreExtractedFromFullName() {
         
         // 1. ARRANGEx
-        let sut = SuperVillain(fullName: "Dr. Octopus") // SUT = System Under Test
+        let sut = SuperVillain(fullName: mainFullName) // SUT = System Under Test
         
         // 2. ACT
         
         // 3. ASSERT
-        XCTAssertEqual("Dr.", sut.title)
-        XCTAssertEqual("Octopus", sut.name)
+        XCTAssertEqual(mainTitle, sut.title)
+        XCTAssertEqual(mainName, sut.name)
     }
     
     func testAttackFiresWeapon() {
         
         // 1. ARRANGE
         let weapon = TestableWeapon()
-        let sut = SuperVillain(title: "Dr.", name: "Octopus", weapon: weapon) // SUT = System Under Test
+        let sut = SuperVillain(title: mainTitle, name: mainName, weapon: weapon) // SUT = System Under Test
         
         // 2. ACT
         sut.attack()
