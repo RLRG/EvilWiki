@@ -16,6 +16,8 @@
 		376AB6D61F696943006CFF6C /* SuperVillain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6D51F696943006CFF6C /* SuperVillain.swift */; };
 		376AB6D81F696A97006CFF6C /* SuperVillainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6D71F696A97006CFF6C /* SuperVillainTests.swift */; };
 		376AB6DA1F696E35006CFF6C /* MegaWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6D91F696E35006CFF6C /* MegaWeapon.swift */; };
+		376AB6DC1F6970E4006CFF6C /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6DB1F6970E4006CFF6C /* TestData.swift */; };
+		376AB6DE1F6971FA006CFF6C /* SuperVillain+convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		376AB6D51F696943006CFF6C /* SuperVillain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillain.swift; sourceTree = "<group>"; };
 		376AB6D71F696A97006CFF6C /* SuperVillainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainTests.swift; sourceTree = "<group>"; };
 		376AB6D91F696E35006CFF6C /* MegaWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaWeapon.swift; sourceTree = "<group>"; };
+		376AB6DB1F6970E4006CFF6C /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SuperVillain+convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 			children = (
 				376AB6BE1F696931006CFF6C /* Info.plist */,
 				376AB6D71F696A97006CFF6C /* SuperVillainTests.swift */,
+				376AB6DB1F6970E4006CFF6C /* TestData.swift */,
+				376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */,
 			);
 			path = EvilWikiTests;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				376AB6D81F696A97006CFF6C /* SuperVillainTests.swift in Sources */,
+				376AB6DE1F6971FA006CFF6C /* SuperVillain+convenience.swift in Sources */,
+				376AB6DC1F6970E4006CFF6C /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
