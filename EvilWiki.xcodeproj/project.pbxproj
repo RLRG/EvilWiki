@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		376AB6A81F696931006CFF6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6A71F696931006CFF6C /* AppDelegate.swift */; };
-		376AB6AA1F696931006CFF6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6A91F696931006CFF6C /* ViewController.swift */; };
 		376AB6AD1F696931006CFF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376AB6AB1F696931006CFF6C /* Main.storyboard */; };
 		376AB6AF1F696931006CFF6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376AB6AE1F696931006CFF6C /* Assets.xcassets */; };
 		376AB6B21F696931006CFF6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376AB6B01F696931006CFF6C /* LaunchScreen.storyboard */; };
@@ -18,6 +17,8 @@
 		376AB6DA1F696E35006CFF6C /* MegaWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6D91F696E35006CFF6C /* MegaWeapon.swift */; };
 		376AB6DC1F6970E4006CFF6C /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6DB1F6970E4006CFF6C /* TestData.swift */; };
 		376AB6DE1F6971FA006CFF6C /* SuperVillain+convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */; };
+		376AB6E01F697BCC006CFF6C /* SuperVillainEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6DF1F697BCC006CFF6C /* SuperVillainEditViewController.swift */; };
+		376AB6E61F697E26006CFF6C /* SuperVillainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6E51F697E26006CFF6C /* SuperVillainPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 /* Begin PBXFileReference section */
 		376AB6A41F696931006CFF6C /* EvilWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvilWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376AB6A71F696931006CFF6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		376AB6A91F696931006CFF6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		376AB6AC1F696931006CFF6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		376AB6AE1F696931006CFF6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		376AB6B11F696931006CFF6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +55,8 @@
 		376AB6D91F696E35006CFF6C /* MegaWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaWeapon.swift; sourceTree = "<group>"; };
 		376AB6DB1F6970E4006CFF6C /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SuperVillain+convenience.swift"; sourceTree = "<group>"; };
+		376AB6DF1F697BCC006CFF6C /* SuperVillainEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainEditViewController.swift; sourceTree = "<group>"; };
+		376AB6E51F697E26006CFF6C /* SuperVillainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +107,10 @@
 		376AB6A61F696931006CFF6C /* EvilWiki */ = {
 			isa = PBXGroup;
 			children = (
-				376AB6A71F696931006CFF6C /* AppDelegate.swift */,
-				376AB6A91F696931006CFF6C /* ViewController.swift */,
-				376AB6AB1F696931006CFF6C /* Main.storyboard */,
-				376AB6AE1F696931006CFF6C /* Assets.xcassets */,
-				376AB6B01F696931006CFF6C /* LaunchScreen.storyboard */,
-				376AB6B31F696931006CFF6C /* Info.plist */,
-				376AB6D51F696943006CFF6C /* SuperVillain.swift */,
-				376AB6D91F696E35006CFF6C /* MegaWeapon.swift */,
+				376AB6E41F697D6F006CFF6C /* Application */,
+				376AB6E21F697D5D006CFF6C /* View */,
+				376AB6E31F697D67006CFF6C /* Presenter */,
+				376AB6E11F697D55006CFF6C /* Model */,
 			);
 			path = EvilWiki;
 			sourceTree = "<group>";
@@ -135,6 +133,43 @@
 				376AB6C91F696931006CFF6C /* Info.plist */,
 			);
 			path = EvilWikiUITests;
+			sourceTree = "<group>";
+		};
+		376AB6E11F697D55006CFF6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				376AB6D51F696943006CFF6C /* SuperVillain.swift */,
+				376AB6D91F696E35006CFF6C /* MegaWeapon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		376AB6E21F697D5D006CFF6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				376AB6DF1F697BCC006CFF6C /* SuperVillainEditViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		376AB6E31F697D67006CFF6C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				376AB6E51F697E26006CFF6C /* SuperVillainPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		376AB6E41F697D6F006CFF6C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				376AB6A71F696931006CFF6C /* AppDelegate.swift */,
+				376AB6AB1F696931006CFF6C /* Main.storyboard */,
+				376AB6AE1F696931006CFF6C /* Assets.xcassets */,
+				376AB6B01F696931006CFF6C /* LaunchScreen.storyboard */,
+				376AB6B31F696931006CFF6C /* Info.plist */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				376AB6D61F696943006CFF6C /* SuperVillain.swift in Sources */,
-				376AB6AA1F696931006CFF6C /* ViewController.swift in Sources */,
 				376AB6A81F696931006CFF6C /* AppDelegate.swift in Sources */,
+				376AB6E01F697BCC006CFF6C /* SuperVillainEditViewController.swift in Sources */,
+				376AB6E61F697E26006CFF6C /* SuperVillainPresenter.swift in Sources */,
 				376AB6DA1F696E35006CFF6C /* MegaWeapon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
