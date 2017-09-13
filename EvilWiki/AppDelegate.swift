@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc = navigationController.topViewController as! SuperVillainEditViewController
         let presenter = SuperVillainPresenter()
         vc.presenter = presenter
+        presenter.view = vc
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController

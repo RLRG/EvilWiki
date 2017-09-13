@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SuperVillainEditViewController: UIViewController {
+class SuperVillainEditViewController: UIViewController, SuperVillainView {
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     var presenter: SuperVillainPresenter?
@@ -27,4 +27,7 @@ class SuperVillainEditViewController: UIViewController {
     @IBAction func save(_ sender: UIBarButtonItem) {
     }
     
+    func enableSaveButton(enabled: Bool) {
+        saveButton.isEnabled = enabled
+    }
 }

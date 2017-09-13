@@ -1,5 +1,5 @@
 //
-//  SuperVillainPresenter.swift
+//  SuperVillainView.swift
 //  EvilWiki
 //
 //  Created by Rodrigo López-Romero Guijarro on 13/09/2017.
@@ -8,11 +8,6 @@
 
 import Foundation
 
-class SuperVillainPresenter {
-    
-    var view: SuperVillainView!
-    
-    func viewReady() {
-        view.enableSaveButton(enabled: false)
-    }
+protocol SuperVillainView {
+    func enableSaveButton(enabled: Bool)
 }

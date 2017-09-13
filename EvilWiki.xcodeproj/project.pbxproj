@@ -20,6 +20,8 @@
 		376AB6E01F697BCC006CFF6C /* SuperVillainEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6DF1F697BCC006CFF6C /* SuperVillainEditViewController.swift */; };
 		376AB6E61F697E26006CFF6C /* SuperVillainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6E51F697E26006CFF6C /* SuperVillainPresenter.swift */; };
 		376AB6E81F698035006CFF6C /* SuperVillainEditViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6E71F698035006CFF6C /* SuperVillainEditViewControllerTests.swift */; };
+		376AB6EA1F6983DE006CFF6C /* SuperVillainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6E91F6983DE006CFF6C /* SuperVillainView.swift */; };
+		376AB6EE1F69846A006CFF6C /* SuperVillainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AB6ED1F69846A006CFF6C /* SuperVillainPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		376AB6DF1F697BCC006CFF6C /* SuperVillainEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainEditViewController.swift; sourceTree = "<group>"; };
 		376AB6E51F697E26006CFF6C /* SuperVillainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainPresenter.swift; sourceTree = "<group>"; };
 		376AB6E71F698035006CFF6C /* SuperVillainEditViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainEditViewControllerTests.swift; sourceTree = "<group>"; };
+		376AB6E91F6983DE006CFF6C /* SuperVillainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainView.swift; sourceTree = "<group>"; };
+		376AB6ED1F69846A006CFF6C /* SuperVillainPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillainPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 				376AB6DB1F6970E4006CFF6C /* TestData.swift */,
 				376AB6DD1F6971FA006CFF6C /* SuperVillain+convenience.swift */,
 				376AB6E71F698035006CFF6C /* SuperVillainEditViewControllerTests.swift */,
+				376AB6ED1F69846A006CFF6C /* SuperVillainPresenterTests.swift */,
 			);
 			path = EvilWikiTests;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 		376AB6E31F697D67006CFF6C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				376AB6E91F6983DE006CFF6C /* SuperVillainView.swift */,
 				376AB6E51F697E26006CFF6C /* SuperVillainPresenter.swift */,
 			);
 			name = Presenter;
@@ -315,6 +321,7 @@
 			files = (
 				376AB6D61F696943006CFF6C /* SuperVillain.swift in Sources */,
 				376AB6A81F696931006CFF6C /* AppDelegate.swift in Sources */,
+				376AB6EA1F6983DE006CFF6C /* SuperVillainView.swift in Sources */,
 				376AB6E01F697BCC006CFF6C /* SuperVillainEditViewController.swift in Sources */,
 				376AB6E61F697E26006CFF6C /* SuperVillainPresenter.swift in Sources */,
 				376AB6DA1F696E35006CFF6C /* MegaWeapon.swift in Sources */,
@@ -328,6 +335,7 @@
 				376AB6D81F696A97006CFF6C /* SuperVillainTests.swift in Sources */,
 				376AB6DE1F6971FA006CFF6C /* SuperVillain+convenience.swift in Sources */,
 				376AB6E81F698035006CFF6C /* SuperVillainEditViewControllerTests.swift in Sources */,
+				376AB6EE1F69846A006CFF6C /* SuperVillainPresenterTests.swift in Sources */,
 				376AB6DC1F6970E4006CFF6C /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
